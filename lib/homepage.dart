@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'maps.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -35,6 +36,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          "Home Page",
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.green,
+      ),
       body: Stack(
         children: [
           // 🔹 Background Image
@@ -62,6 +70,16 @@ class _HomePageState extends State<HomePage> {
                   value: "$humidity %",
                   icon: Icons.water_drop,
                   color: Colors.blue,
+                ),
+                SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Mappage()),
+                    );
+                  },
+                  child: Text("Go to Map Page"),
                 ),
               ],
             ),
