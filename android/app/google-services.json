@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "609684986262",
+    "firebase_url": "https://hcsr04-909ec-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hcsr04-909ec",
+    "storage_bucket": "hcsr04-909ec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609684986262:android:c7004ad2e9631e944665b7",
+        "android_client_info": {
+          "package_name": "com.example.myfirst_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcKnqMs5CQMErHndsEXUHnc3dtN7exq1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
